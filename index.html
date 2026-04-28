@@ -465,7 +465,7 @@ function researchItem() {
   }
 
   const ebayUrl = "https://www.ebay.com/sch/i.html?_nkw=" + searchName + priceFilter + "&LH_Sold=1&LH_Complete=1";
-  const googleUrl = "https://google.com" + searchName + "+price&tbm=shop";
+  const googleUrl = "https://google.com/search?q=" + searchName + "+price&tbm=shop";
 
   window.open(ebayUrl, '_blank');
   window.open(googleUrl, '_blank');
