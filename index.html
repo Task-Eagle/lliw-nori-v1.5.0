@@ -464,10 +464,10 @@ function researchItem() {
     priceFilter = `&_udlo=${minPrice}&_udhi=${maxPrice}`;
   }
 
-  // 1. eBay URL: The "+" signs glue the text and variables together
+  // 1. eBay URL: Added www. and /sch/i.html?_nkw=
   const ebayUrl = "https://ebay.com" + searchName + priceFilter + "&LH_Sold=1&LH_Complete=1";
 
-  // 2. Google URL
+  // 2. Google URL: Added www. and /search?q=
   const googleUrl = "https://google.com" + searchName + "+price&tbm=shop";
 
   window.open(ebayUrl, '_blank');
